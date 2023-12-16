@@ -4,9 +4,15 @@
 
 <head>
     <title>Tim Berners Lee</title>
-    <style>
-     
-    </style>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <script>
+class YearElement extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML=new Date().getFullYear();
+    }
+    customElements.define("x-fullyear", YearElement); 
+</script>
 </head>
 
 <body>
@@ -20,10 +26,16 @@ height=500>
         <h2>The Inventor of the Web invented</h2>
 
         <p>
+            The first web browser
+            <li>Developed the first web browser and web server</li>
+            The World Wide Web Consortium
+            <li>This oversees the continued development of the web</li>
+            The HTML markup language
+             <li>One of the most commonly used languages for coding</li>
         </p>
     </main>
     <footer>
-        &copy; 2023 Joshua Da Silva
+        &copy; Joshua Da Silva <x-fullyear></x-fullyear>
     </footer>
 </body>
 
