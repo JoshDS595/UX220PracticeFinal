@@ -4,8 +4,30 @@
 
 <head>
     <link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 
+<style> 
+footer {
+font-family: 'Cedarville Cursive', cursive;
+background-color: purple;
+color: #ffffff;
+padding: 20px;
+}
+ .form-group-hi{
+    float: centred;
+    padding: 30px;
+    margin: 30px;
+    }
+    main,header{
+    padding:10px;}
+    .btn-primary{
+    float:right;
+    }
+
+</style>
+</head>
 
 <body>
     <header>
@@ -13,6 +35,8 @@
     </header>
     <main>
         <!-- TODO describe why this form will or will not work on the internet -->
+        <!--This form would not work on the internet because theres no connection to a server. It is only a local page that someone can access this from.-->
+        <div class="form-group-hi">
         <form action="localhost:8000" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -21,6 +45,10 @@
             <div class="form-group">
                 <label for="email">Email</label>
                 <input class="form-control" id="email" type="email" name="Email">
+            </div>
+             <div class="form-group">
+                <label for="name">Subject</label required>
+                <input class="form-control" id="name" type="text" name="Subject">
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
@@ -31,9 +59,8 @@
         </form>
     </main>
     <footer>
-        <p>Your name here</p>
+        <p>Joshua Da Silva</p>
     </footer>
 </body>
-
 
 </html>
